@@ -1,0 +1,7 @@
+com\codeusingjava\controller\ProducerController.class
+com\codeusingjava\model\Person.class
+com\codeusingjava\service\ProducerService.class
+com\codeusingjava\config\ProducersConfig.class
+com\codeusingjava\util\AppConstants.class
+com\codeusingjava\config\ConsumersConfig.class
+com\codeusingjava\KafaJSONMessageApplication.class
