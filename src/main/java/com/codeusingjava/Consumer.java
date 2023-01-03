@@ -12,7 +12,7 @@ public class Consumer {
 
     private static final Logger logger = LoggerFactory.getLogger(Consumer.class);
 
-    @KafkaListener(topics = AppConstants.TOPIC, groupId=AppConstants.GROUP_ID, containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = {"advice-topic"}, groupId=AppConstants.GROUP_ID, containerFactory = "kafkaListenerContainerFactory")
     public void listen(Person user) {
         logger.info("Received info--> : ", user);
         logger.info("Received info ************************** --> : ", user.getName() );
