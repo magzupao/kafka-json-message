@@ -12,8 +12,6 @@ public class ProducerService {
     @Autowired
     private KafkaTemplate<String, Person> kafkaTemplate;
 
-    
-
     public void send(Person user) {
         System.out.println("Sending User Json Serializer : {}"+user);
         kafkaTemplate.send(AppConstants.TOPIC, user);

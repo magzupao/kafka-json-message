@@ -1,7 +1,7 @@
 package com.codeusingjava.util;
 
 public class AppConstants {
-	public static final String TOPIC="codeusingjavaTopic";
-	public static final String GROUP_ID="groupId";
+	public static final String TOPIC="advice-topic";
+	public static final String GROUP_ID="tpd-loggers";
 
 }

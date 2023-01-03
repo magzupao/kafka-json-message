@@ -15,11 +15,8 @@ import com.codeusingjava.service.ProducerService;
 @RestController
 @RequestMapping(value = "/kafka/")
 public class ProducerController {
-
     @Autowired
     ProducerService kafkaProducer;
-
-
     @PostMapping(value = "/producer")
     public String sendMessage(@RequestBody Person user)
     {

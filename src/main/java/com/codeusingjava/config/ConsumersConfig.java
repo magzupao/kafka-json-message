@@ -20,7 +20,6 @@ import com.codeusingjava.util.AppConstants;
 @EnableKafka
 @Configuration
 public class ConsumersConfig {
-
     @Value("${kafka.bootstrap-servers}")
     private String bootstrapServers;
 
