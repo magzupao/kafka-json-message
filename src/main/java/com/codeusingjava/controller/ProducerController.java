@@ -1,5 +1,6 @@
 package com.codeusingjava.controller;
 
+import com.codeusingjava.util.AppConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,4 +25,9 @@ public class ProducerController {
         return "Message sent Successfully to the topic";
     }
 
+    @KafkaListener(topics = AppConstants.TOPIC, groupId=AppConstants.GROUP_ID)
+    public void listen(Person user) {
+        System.out.println("Received info--> : " +user);
+        System.out.println("Received info *** --> : " +user.getName() );
+    }
 }
