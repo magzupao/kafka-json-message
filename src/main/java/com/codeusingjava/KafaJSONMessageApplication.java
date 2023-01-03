@@ -18,9 +18,9 @@ public class KafaJSONMessageApplication {
         SpringApplication.run(KafaJSONMessageApplication.class, args);
     }
 
-	@KafkaListener(topics = AppConstants.TOPIC, groupId=AppConstants.GROUP_ID, containerFactory = "kafkaListenerContainerFactory")
+/*	@KafkaListener(topics = AppConstants.TOPIC, groupId=AppConstants.GROUP_ID, containerFactory = "kafkaListenerContainerFactory")
     public void listen(Person user) {
         logger.info("Received info--> : ", user);
         logger.info("Received info ************************** --> : ", user.getName() );
-    }
+    } */
 }
